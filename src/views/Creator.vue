@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import SurveyCreator from "../components/SurveyCreator";
+import SurveyCreator from "../components/SurveyCreator.vue";
 import { json } from "../data/survey_json";
 
 export default {

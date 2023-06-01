@@ -2,15 +2,16 @@
   "name": "surveyjs-vue-quickstart",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
     "ckeditor": "^4.11.4",
-    "core-js": "^3.6.5",
     "jquery": "^3.1.1",
     "jspdf": "^2.3.0",
     "jspdf-autotable": "^3.0.10",
@@ -26,26 +27,22 @@
     "xlsx": "^0.16.9"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
+    "@vitejs/plugin-vue2": "^2.2.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "vite": "^4.2.1",
+    "vite-plugin-vue2": "^2.0.3"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "es2022": true
     },
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
     "rules": {}
   },
   "browserslist": [

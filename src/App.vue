@@ -44,21 +44,21 @@ Vue.use(VueRouter);
 
 const Home = () => import("./views/Home.vue");
 const Survey = () =>
-  import(/* webpackChunkName: "survey" */ "./views/Survey.vue");
+  import("./views/Survey.vue");
 const Creator = () =>
-  import(/* webpackChunkName: "creator" */ "./views/Creator.vue");
+  import("./views/Creator.vue");
 const ExportToPDF = () =>
-  import(/* webpackChunkName: "creator" */ "./views/ExportToPDF.vue");
+  import("./views/ExportToPDF.vue");
 const Analytics = () =>
-  import(/* webpackChunkName: "creator" */ "./views/Analytics.vue");
+  import("./views/Analytics.vue");
 const AnalyticsTabulator = () =>
-  import(/* webpackChunkName: "creator" */ "./views/AnalyticsTabulator.vue");
+  import("./views/AnalyticsTabulator.vue");
 const AnalyticsDatatables = () =>
-  import(/* webpackChunkName: "creator" */ "./views/AnalyticsDatatables.vue");
+  import("./views/AnalyticsDatatables.vue");
 
 const router = new VueRouter({
   mode: "history",
-  base: __dirname,
+  base: window.location.pathname,
   routes: [
     { path: "/", component: Home },
     // Just use them normally in the route config
