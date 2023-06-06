@@ -58,7 +58,7 @@ const AnalyticsDatatables = () =>
 
 const router = new VueRouter({
   mode: "history",
-  base: window.location.pathname,
+  base: "/",
   routes: [
     { path: "/", component: Home },
     // Just use them normally in the route config
