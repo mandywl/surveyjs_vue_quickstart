@@ -13,7 +13,7 @@ SurveyJS is a set of JavaScript components that allow you and your users to buil
 git clone https://github.com/surveyjs/surveyjs_vue_quickstart.git
 cd surveyjs_vue_quickstart
 npm i
-npm run serve
+npm run dev
 ```
 
 Open http://localhost:8080/ in your web browser.
